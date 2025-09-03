@@ -5,11 +5,11 @@ window.onload = function() {
 
     toggleBtn.onclick = function() {
         if (isPlaying) {
-            music.pause();
-            toggleBtn.textContent = "🔇 Music On";
-        } else {
             music.play();
             toggleBtn.textContent = "🔊 Music Off";
+        } else {
+            music.pause();
+            toggleBtn.textContent = "🔇 Music On";
         }
         isPlaying = !isPlaying;
     };
@@ -19,4 +19,5 @@ window.onload = function() {
         toggleBtn.textContent = "🔇 Music On";
         isPlaying = false;
     });
+
 };
